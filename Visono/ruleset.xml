@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<ruleset name="Visono">
+	<description>Visono coding standard</description>
+
+    <rule ref="PSR1">
+        <exclude name="PSR1.Files.SideEffects.FoundWithSymbols" />
+    </rule>
+
+	<rule ref="PSR2">
+		<exclude name="Generic.WhiteSpace.DisallowTabIndent" />
+		<exclude name="Generic.WhiteSpace.ScopeIndent" />
+		<exclude name="PEAR.Functions.FunctionCallSignature" />
+		<exclude name="PSR2.ControlStructures.SwitchDeclaration.caseIndent" />
+        <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
+        <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps" />
+	</rule>
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="absoluteLineLimit" value="120" />
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Files.LineEndings.InvalidEOLChar">
+    	<severity>10</severity>
+    </rule>
+
+    <rule ref="PSR2.Classes.ClassDeclaration.ExtendsLine">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PSR2.Classes.ClassDeclaration.ImplementsLine">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="PSR2.Classes.ClassDeclaration.OpenBraceNewLine">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Squiz.ControlStructures.ControlSignature">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.Indent">
+        <severity>0</severity>
+    </rule>
+
+    <!-- DISABLE because This sniff cannot cope with tabs, counting them as spaces -->
+    <rule ref="PSR2.Classes.ClassDeclaration.InterfaceWrongIndent">
+        <severity>0</severity>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing.NoSpaceBeforeAmp">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing.SpacingAfterAmp">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing.SpacingBefore">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing.SpacingAfter">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing.NoSpaceBefore">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing.NoSpaceAfter">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing.IncorrectSingle">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing.Incorrect">
+        <severity>9</severity>
+    </rule>
+
+    <!-- override imported PSR-2 property setting -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
+        <properties>
+            <property name="ignoreBlankLines" value="false" />
+        </properties>
+    </rule>
+    <!-- /override imported PSR-2 property setting -->
+
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines">
+        <severity>5</severity>
+    </rule>
+
+    <rule ref="Visono.Commenting.DisallowHashComments.Found">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Visono.Functions.FunctionCallSignature.SpaceAfterOpenBracket">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Visono.Functions.FunctionCallSignature.SpaceBeforeCloseBracket">
+        <severity>9</severity>
+    </rule>
+
+    <rule ref="Visono.Legacy.DisallowFunctionName.DisallowedFunction">
+        <severity>10</severity>
+    </rule>
+
+    <rule ref="Visono.Legacy.DisallowVariable.DisallowedVariableCustomerId">
+        <severity>10</severity>
+    </rule>
+
+    <rule ref="Visono.Legacy.DisallowVariable.DisallowedVariableConf">
+        <severity>10</severity>
+    </rule>
+
+    <rule ref="Visono.WhiteSpace.DisallowSpacesIndent.SpacesUsed">
+        <severity>10</severity>
+    </rule>
+
+</ruleset>
