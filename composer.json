@@ -1,5 +1,5 @@
 {
-    "name": "visono/codeStyle",
+    "name": "visono/coding-standards",
     "description": "Visono standard codestyle",
     "minimum-stability": "dev",
     "license": "proprietary",
@@ -21,16 +21,12 @@
             "email": "a.martyniuk@visono.biz"
         },
         {
-            "name": "rené woltmann",
+            "name": "rene woltmann",
             "email": "r.woltmann@visono.biz"
         },
         {
             "name": "patrik hagedorn",
             "email": "p.hagedorn@visono.biz"
-        },
-        {
-            "name": "felix seeberg",
-            "email": "f.seeberg@visono.biz"
         },
         {
             "name": "felix seeberg",
